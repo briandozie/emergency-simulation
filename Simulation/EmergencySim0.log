@@ -1,0 +1,336 @@
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Created event 'flood' at 'Midtown' during time '5'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Created event 'fire' at 'Midtown' during time '23'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Created event 'fire' at 'Hill Valley' during time '17'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Created event 'flood' at 'Hill Valley' during time '10'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Created event 'chemical' at 'Westtown' during time '0'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.view.FileIO readFile
+INFO: Successfully read events from 'input.txt'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.controller.Simulation generateEmergency
+INFO: Created emergency 'chemical' at 'Westtown' during time '0'
+Sep 20, 2022 12:35:44 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 1 Westtown
+Sep 20, 2022 12:35:45 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 1 Westtown
+Sep 20, 2022 12:35:46 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 2 Westtown
+Sep 20, 2022 12:35:46 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 2 Westtown
+Sep 20, 2022 12:35:47 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 3 Westtown
+Sep 20, 2022 12:35:48 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 4 Westtown
+Sep 20, 2022 12:35:48 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 3 Westtown
+Sep 20, 2022 12:35:49 AM edu.curtin.emergencysim.controller.Simulation generateEmergency
+INFO: Created emergency 'flood' at 'Midtown' during time '5'
+Sep 20, 2022 12:35:49 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 4 Westtown
+Sep 20, 2022 12:35:50 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 5 Westtown
+Sep 20, 2022 12:35:51 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 1 Midtown
+Sep 20, 2022 12:35:51 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 5 Westtown
+Sep 20, 2022 12:35:52 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: flood casualty 1 Midtown
+Sep 20, 2022 12:35:52 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 6 Westtown
+Sep 20, 2022 12:35:53 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 6 Westtown
+Sep 20, 2022 12:35:54 AM edu.curtin.emergencysim.controller.Simulation generateEmergency
+INFO: Created emergency 'flood' at 'Hill Valley' during time '10'
+Sep 20, 2022 12:35:54 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+WARNING: Invalid poll message: fire + Midtown
+Sep 20, 2022 12:35:54 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 2 Midtown
+Sep 20, 2022 12:35:54 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: flood casualty 1 Hill Valley
+Sep 20, 2022 12:35:54 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 7 Westtown
+Sep 20, 2022 12:35:55 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 3 Midtown
+Sep 20, 2022 12:35:55 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 8 Westtown
+Sep 20, 2022 12:35:55 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 7 Westtown
+Sep 20, 2022 12:35:56 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+WARNING: Invalid poll message: fire - Midtown
+Sep 20, 2022 12:35:56 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 4 Midtown
+Sep 20, 2022 12:35:56 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 1 Hill Valley
+Sep 20, 2022 12:35:56 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 9 Westtown
+Sep 20, 2022 12:35:56 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 8 Westtown
+Sep 20, 2022 12:35:57 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 2 Hill Valley
+Sep 20, 2022 12:35:57 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 10 Westtown
+Sep 20, 2022 12:35:57 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 9 Westtown
+Sep 20, 2022 12:35:58 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 3 Hill Valley
+Sep 20, 2022 12:35:58 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 11 Westtown
+Sep 20, 2022 12:35:58 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 10 Westtown
+Sep 20, 2022 12:35:59 AM edu.curtin.emergencysim.model.Emergency setEnd
+INFO: flood end Midtown
+Sep 20, 2022 12:35:59 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: flood damage 4 Hill Valley
+Sep 20, 2022 12:35:59 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 12 Westtown
+Sep 20, 2022 12:35:59 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 11 Westtown
+Sep 20, 2022 12:36:00 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+WARNING: Invalid poll message: fire + Hill Valley
+Sep 20, 2022 12:36:00 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 13 Westtown
+Sep 20, 2022 12:36:00 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 12 Westtown
+Sep 20, 2022 12:36:01 AM edu.curtin.emergencysim.controller.Simulation generateEmergency
+INFO: Created emergency 'fire' at 'Hill Valley' during time '17'
+Sep 20, 2022 12:36:01 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 14 Westtown
+Sep 20, 2022 12:36:01 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 13 Westtown
+Sep 20, 2022 12:36:02 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 15 Westtown
+Sep 20, 2022 12:36:02 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 14 Westtown
+Sep 20, 2022 12:36:02 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 1 Hill Valley
+Sep 20, 2022 12:36:03 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 15 Westtown
+Sep 20, 2022 12:36:04 AM edu.curtin.emergencysim.model.Emergency setEnd
+INFO: flood end Hill Valley
+Sep 20, 2022 12:36:04 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 16 Westtown
+Sep 20, 2022 12:36:04 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 16 Westtown
+Sep 20, 2022 12:36:04 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 1 Hill Valley
+Sep 20, 2022 12:36:04 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 2 Hill Valley
+Sep 20, 2022 12:36:05 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 17 Westtown
+Sep 20, 2022 12:36:05 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 2 Hill Valley
+Sep 20, 2022 12:36:05 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 3 Hill Valley
+Sep 20, 2022 12:36:06 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 18 Westtown
+Sep 20, 2022 12:36:06 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 17 Westtown
+Sep 20, 2022 12:36:07 AM edu.curtin.emergencysim.controller.Simulation generateEmergency
+INFO: Created emergency 'fire' at 'Midtown' during time '23'
+Sep 20, 2022 12:36:07 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 19 Westtown
+Sep 20, 2022 12:36:07 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 18 Westtown
+Sep 20, 2022 12:36:07 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 4 Hill Valley
+Sep 20, 2022 12:36:08 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 20 Westtown
+Sep 20, 2022 12:36:08 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 19 Westtown
+Sep 20, 2022 12:36:08 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 3 Hill Valley
+Sep 20, 2022 12:36:08 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 5 Hill Valley
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+INFO: 'fire' response team arrived at 'Hill Valley' during time '25'
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+WARNING: Invalid poll message: flood + Westtown
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+INFO: 'chemical' response team arrived at 'Westtown' during time '25'
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 21 Westtown
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 20 Westtown
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 4 Hill Valley
+Sep 20, 2022 12:36:09 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 6 Hill Valley
+Sep 20, 2022 12:36:10 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 1 Midtown
+Sep 20, 2022 12:36:10 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 22 Westtown
+Sep 20, 2022 12:36:10 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 21 Westtown
+Sep 20, 2022 12:36:10 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 5 Hill Valley
+Sep 20, 2022 12:36:10 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 7 Hill Valley
+Sep 20, 2022 12:36:11 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 1 Midtown
+Sep 20, 2022 12:36:11 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 23 Westtown
+Sep 20, 2022 12:36:11 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 22 Westtown
+Sep 20, 2022 12:36:11 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 6 Hill Valley
+Sep 20, 2022 12:36:11 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 8 Hill Valley
+Sep 20, 2022 12:36:12 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 7 Hill Valley
+Sep 20, 2022 12:36:12 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 9 Hill Valley
+Sep 20, 2022 12:36:13 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: chemical casualty 24 Westtown
+Sep 20, 2022 12:36:13 AM edu.curtin.emergencysim.model.Emergency addContam
+INFO: chemical contam 23 Westtown
+Sep 20, 2022 12:36:13 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 10 Hill Valley
+Sep 20, 2022 12:36:14 AM edu.curtin.emergencysim.model.Emergency setEnd
+INFO: chemical end Westtown
+Sep 20, 2022 12:36:14 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 2 Midtown
+Sep 20, 2022 12:36:14 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 2 Midtown
+Sep 20, 2022 12:36:14 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 11 Hill Valley
+Sep 20, 2022 12:36:15 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 3 Midtown
+Sep 20, 2022 12:36:15 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 8 Hill Valley
+Sep 20, 2022 12:36:15 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 12 Hill Valley
+Sep 20, 2022 12:36:16 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 4 Midtown
+Sep 20, 2022 12:36:16 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 9 Hill Valley
+Sep 20, 2022 12:36:16 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 13 Hill Valley
+Sep 20, 2022 12:36:17 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 3 Midtown
+Sep 20, 2022 12:36:17 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 5 Midtown
+Sep 20, 2022 12:36:17 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 14 Hill Valley
+Sep 20, 2022 12:36:18 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 4 Midtown
+Sep 20, 2022 12:36:18 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 6 Midtown
+Sep 20, 2022 12:36:18 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 15 Hill Valley
+Sep 20, 2022 12:36:19 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 7 Midtown
+Sep 20, 2022 12:36:19 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 16 Hill Valley
+Sep 20, 2022 12:36:20 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+INFO: 'fire' response team arrived at 'Midtown' during time '36'
+Sep 20, 2022 12:36:20 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 5 Midtown
+Sep 20, 2022 12:36:20 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 8 Midtown
+Sep 20, 2022 12:36:20 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 10 Hill Valley
+Sep 20, 2022 12:36:20 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 17 Hill Valley
+Sep 20, 2022 12:36:21 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 6 Midtown
+Sep 20, 2022 12:36:21 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 11 Hill Valley
+Sep 20, 2022 12:36:21 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 18 Hill Valley
+Sep 20, 2022 12:36:22 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 7 Midtown
+Sep 20, 2022 12:36:22 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 9 Midtown
+Sep 20, 2022 12:36:22 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 12 Hill Valley
+Sep 20, 2022 12:36:22 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 19 Hill Valley
+Sep 20, 2022 12:36:23 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 13 Hill Valley
+Sep 20, 2022 12:36:23 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 20 Hill Valley
+Sep 20, 2022 12:36:24 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 8 Midtown
+Sep 20, 2022 12:36:24 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 14 Hill Valley
+Sep 20, 2022 12:36:24 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 21 Hill Valley
+Sep 20, 2022 12:36:25 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 9 Midtown
+Sep 20, 2022 12:36:25 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 10 Midtown
+Sep 20, 2022 12:36:25 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 15 Hill Valley
+Sep 20, 2022 12:36:25 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 22 Hill Valley
+Sep 20, 2022 12:36:26 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 10 Midtown
+Sep 20, 2022 12:36:26 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 11 Midtown
+Sep 20, 2022 12:36:26 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 16 Hill Valley
+Sep 20, 2022 12:36:26 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 23 Hill Valley
+Sep 20, 2022 12:36:27 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 11 Midtown
+Sep 20, 2022 12:36:27 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 12 Midtown
+Sep 20, 2022 12:36:27 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 17 Hill Valley
+Sep 20, 2022 12:36:27 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 24 Hill Valley
+Sep 20, 2022 12:36:28 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 12 Midtown
+Sep 20, 2022 12:36:28 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 13 Midtown
+Sep 20, 2022 12:36:28 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 25 Hill Valley
+Sep 20, 2022 12:36:29 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 13 Midtown
+Sep 20, 2022 12:36:29 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 14 Midtown
+Sep 20, 2022 12:36:30 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 26 Hill Valley
+Sep 20, 2022 12:36:31 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 15 Midtown
+Sep 20, 2022 12:36:32 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 16 Midtown
+Sep 20, 2022 12:36:32 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 18 Hill Valley
+Sep 20, 2022 12:36:32 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 27 Hill Valley
+Sep 20, 2022 12:36:33 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 19 Hill Valley
+Sep 20, 2022 12:36:33 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 28 Hill Valley
+Sep 20, 2022 12:36:34 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 20 Hill Valley
+Sep 20, 2022 12:36:34 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 29 Hill Valley
+Sep 20, 2022 12:36:35 AM edu.curtin.emergencysim.model.Emergency setEnd
+INFO: fire end Midtown
+Sep 20, 2022 12:36:35 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 30 Hill Valley
+Sep 20, 2022 12:36:36 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 31 Hill Valley
+Sep 20, 2022 12:36:37 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 21 Hill Valley
+Sep 20, 2022 12:36:37 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 32 Hill Valley
+Sep 20, 2022 12:36:38 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 33 Hill Valley
+Sep 20, 2022 12:36:39 AM edu.curtin.emergencysim.controller.Simulation pollResponder
+WARNING: Invalid poll message: fire - Midtown
+Sep 20, 2022 12:36:39 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 34 Hill Valley
+Sep 20, 2022 12:36:40 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 35 Hill Valley
+Sep 20, 2022 12:36:41 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 36 Hill Valley
+Sep 20, 2022 12:36:42 AM edu.curtin.emergencysim.model.Emergency addCasualty
+INFO: fire casualty 22 Hill Valley
+Sep 20, 2022 12:36:42 AM edu.curtin.emergencysim.model.Emergency addDamage
+INFO: fire damage 37 Hill Valley

@@ -1,0 +1,406 @@
+Criteria 2: Package/Class/Interface/Method responsibilities
+
+    Packages
+
+        1) Model
+
+        This package contains classes that are repsonsible for storing data/information
+        necessary to run the simulation. Below are the classes within this package:
+
+            a. Emergency.java
+            b. EmergencyList.java
+            c. Event.java
+            d. EventList.java
+            e. SimulationFactory.java
+            f. EmergencySimException.java
+            g. EmergencyObservable.java
+            h. EmergencyObserver.java
+
+        2) View
+
+        This package contains classes that are repsonsible for any input or output
+        operations that the program needs to perform. Below are the classes within
+        this package:
+
+            a. Display.java
+            b. FileIO.java
+        
+        3) Controller
+
+        This package contains classes that are repsonsible for any decision making 
+        or simulation logic operations that the program needs to perform. Below 
+        are the classes within this package:
+
+            a. ChemicalSpill.java
+            b. ChemSpillNoResponder.java
+            c. ChemSpillWithResponder.java
+            d. FireHigh.java
+            e. FireHighNoResponder.java
+            f. FireHighWithResponder.java
+            g. FireLow.java
+            h. FireLowNoResponder.java
+            i. FireLowWithResponder.java
+            j. Flood.java
+            k. FloodNoResponder.java
+            l. FloodWithResponder.java
+            m. EmergencyState.java
+            n. Simulation.java
+
+        4) Responder
+
+        This package contains classes that are responsible to represent the
+        communucation link between the programme and the actual responders.
+        Below are the classes within this package:
+
+            a. ResponderComm.java
+            b. ResponderCommImpl.java
+
+    Interfaces
+
+        1) EmergencyState.java
+
+            This interface is used the represent the state of an emergency.
+            It contains methods to run the emergency (check if it needs to
+            change state or end), and simulate any losses that occured
+            due to the emergency.
+
+        2) ResponderComm.java
+
+            This interface represents the communication link between the programme
+            and the actual responders. It contains methods to send and receive 
+            communucations from the responders.
+
+        3) EmergencyObserver.java
+
+            This interface represents the observer interface in the implementation
+            of the Observer Pattern. It contains a method to notify the reposonders
+            via the communication link about events in the simulation.
+
+    Abstract Classes
+
+        1) ChemicalSpill.java
+
+            This abstract class represents a chemical spill emergency state. It
+            contains the constant values of the loss probability and cleanup
+            duration of the chemical spill. The class also implements some of 
+            the methods of the EmergencyState interface that are shared between
+            its subclasses.
+
+        2) FireHigh.java
+
+            This abstract class represents a fire high emergency state. It
+            contains the constant values of the loss probability and cleanup
+            duration of the fire. The class also implements some of the
+            methods of the EmergencyState interface that are shared between
+            its subclasses.
+
+        3) FireLow.java
+
+            This abstract class represents a fire low emergency state. It
+            contains the constant values of the loss probability, as well as
+            the cleanup and transition duration (fire low to high) of the fire.
+            The class also implements some of the methods of the EmergencyState
+            interface that are shared between its subclasses.
+
+        4) Flood.java
+
+            This abstract class represents a fire high emergency state. It
+            contains the constant values of the loss probability and cleanup
+            duration of the fire. The class also implements some of the
+            methods of the EmergencyState interface that are shared between
+            its subclasses.
+
+        5) EmergencyObservable.java
+
+            A common superclass for the subjects of the Observer Pattern. It 
+            implements the methods required for the Obeserver Pattern that is
+            shared between its subclasses (subjects or the Observer Pattern).
+
+    Classes
+
+        1) ChemSpillNoResponder.java
+
+            This class represents a chemical spill state with responders absent.
+            It extends ChemicalSpill the abstract class.
+
+        2) ChemSpillWithResponder.java
+
+            This class represents a chemical spill state with responders present.
+            It extends ChemicalSpill the abstract class.
+
+        3) FireHighNoResponder.java
+
+            This class represents a fire high state with responders absent.
+            It extends FireHigh the abstract class.
+
+        4) FireHighWithResponder.java
+
+            This class respresents a fire high state with responders present.
+            It extends the FireHigh abstract class.
+
+        5) FireLowNoResponder.java
+
+            This class respresents a fire low state with responders absent.
+            It extends the FireLow abstract class.
+
+        6) FireLowWithResponder.java
+
+            This class respresents a fire low state with responders present.
+            It extends the FireLow abstract class.
+
+        7) FloodNoResponder.java
+
+            This class respresents a flood state with responders absent.
+            It extends the Flood abstract class.
+
+        8) FloodWithResponder.java
+
+            This class respresents a flood state with responders present.
+            It extends the Flood abstract class.
+
+        All the classes above contain implementations of some of the methods in
+        the EmergencyState interface that are more specific to their own class.
+
+        9) Simulation.java
+
+            This class contains methods to run the entire emergency simulation.
+            It makes methods calls to each emergency object in the emergency list
+            in order to run the simulation of each of the emergencies.
+
+        10) Emergency.java
+
+            This class is used to store information about an emergency.
+
+        11) EmergencyList.java
+
+            This class represents a list of emergencies. It is used to store a
+            list of all generated emergencies in the simulation.
+
+        12) Event.java
+
+            This class is used to store information about an event read from file.
+
+        13) EventList.java
+
+            This class represents a list of events. It is used to store a list of
+            all events read from file.
+
+        14) SimulationFactory.java
+
+            This class is used as a factory to create new Event or Emergency objects
+            during the simulation.
+
+        15) EmergencySimException.java
+
+            This class defines a custom exception for the simulation programme.
+
+        16) ResponderCommImpl.java
+
+            This class is an implementation of the ResponderComm interface. It contains
+            methods to send and receive communucations from actual responders.
+
+        17) Display.java
+
+            This class contains methods to display messages on the terminal.
+
+        18) FileIO.java
+
+            This class contains the method to read a file and import the events
+            into the simulation programme.
+
+        19) EmergencySimApp.java
+
+            This class contains the main method to run the simulation programme.
+
+
+Criteria 3: Error Handling and Logging
+
+    Error Handling
+    
+        In the simulation, any operations that may throw an exception is placed
+        within a try-catch statement. 
+        
+        For more severe exceptions, upon catching them, another custom defined
+        exception will be thrown. This custom exception will be caught in the
+        main method and any details regarding to the exception will be printed
+        out on the terminal before the program terminates.
+
+        For less severe exceptions the exception will be caught and logged.
+
+    Logging
+
+        Throughout the simulaton. logging statements are used to log any important
+        or significant events/operations performed. Some of the operation include:
+
+            - reading an event from file
+            - generating an emergency
+            - occurrence of loss events
+            - changes of emergency event status
+
+        Regular operations of the simulation are logged with a level of "info"
+        Non-fatal errors (programme can still continue) are logged with the level of "warning"
+        Fatal errors (programme must termintate) are logged with the level of "severe"
+
+
+Criteria 4: Dependency Injection
+
+    Dependency injection is abided by throughtout the entire design of the simulation
+    programme, with the exception creating new states, which is overlooked in this
+    assignment.
+
+    All necessary object creation is done in the main method before the simulation 
+    begins. For cases in which objects need to be created later on which are:
+
+        - creating event objects during file read
+        - creating emergency objects based on time of occurrence
+
+    Factory classes are initialized and passed through the constructor into the
+    classes which are responsible for creating these objects. The factory class
+    contains methods to create the necessary objects.
+
+    Besides that, there are also no static method calls to other classes, and any required
+    references to objects are imported to the classes via the constructor or method arguments.
+
+
+Criteria 5: Observer Pattern
+
+    The Observer Pattern is used to notify responders about status and loss events
+    that occur in the simulation. 
+
+    The subjects in this pattern are the EmergencyList and Emergency classes. Both
+    of the classes extend a common abstract superclass called EmergencyObservable.
+    The EmergencyObservable will have a list of registered observers in its class
+    field. It will also have methods to register, unregister, and notify observers.
+    This common superclass enables reuse by inheritance, in which both subject
+    classes are able to call the notify observer method as events occur within
+    their classes.
+
+    The observer interface in this pattern is the EmergencyObserver interface.
+    Apart from that, the concrete observer is the ResponderderCommImpl. Therefore,
+    the ResponderCommImpl class will implement the EmergencyObserver interface.
+    The notify bservers method in the subject classes will call this class' send()
+    method in order to provide updated information to the responders about events
+    in the simulation as they occur. Events that will be notified via the send()
+    method are as follows:
+
+        Status events  - When an emergency begins, changes, or ends
+        Loss events    - When a casualty occurs, property is damaged, or an
+                         environmental contamination occurs.
+
+    These events will be represented by a formatted String which will be passed as
+    an argument in the notify observers method, and later passed on to the send()
+    method in the ResponderCommImpl.
+
+
+Criteria 6: State Pattern
+
+    The state of an emergency is indicated by a state variable stored in the class field
+    of the Emergency class. The state variable is of type EmergencyState.
+    Therefore, the context class in this State Pattern is the Emergency class.
+
+    EmergencyState is an interface representing the states. It contains methods
+    that have a different implementation accross the different states.
+    The methods in the interface and their responsibilities are:
+
+        run               - Determines if the state needs to be changed or ended
+        simulateCasualty  - Determines whether a casualty occurs based on the probability
+        simulateDamage    - Determines whether a property damage occurs based on the probability
+        simulateContam    - Determines whether an environmental contamination occurs based
+                            on the probability
+        updateState       - Determines whether the state needs to be changed based on the presence
+                            of the responders
+        toStringState     - Returns a string representation of the current state.
+
+    The EmergencyState interface is implemeted by 4 abstract classes, which are:
+
+        - ChemicalSpill.java
+        - FireLow.java
+        - FireHigh.java
+        - Flood.java
+
+        These 4 abstract classes store the constant values that are related to 
+        their respective emergency states in the class fields.
+        Below are the constant values stored in each abstract class:
+
+            ChemicalSpill.java
+
+                - CHEM_CASUALTY_PROB
+                - CHEM_CONTAM_PROB
+                - CHEM_CLEANUP_TIME
+
+            FireHigh.java
+
+                - FIRE_HIGH_TO_LOW_TIME
+                - FIRE_HIGH_CASUALTY_PROB
+                - FIRE_HIGH_DAMAGE_PROB
+
+            FireLow.java
+
+                - FIRE_LOW_TO_HIGH_TIME
+                - FIRE_LOW_CLEANUP_TIME
+                - FIRE_LOW_CASUALTY_PROB
+                - FIRE_LOW_DAMAGE_PROB
+
+            Flood.java
+
+                - FLOOD_CASUALTY_PROB
+                - FLOOD_DAMAGE_PROB
+                - FLOOD_END_TIME
+
+        In addition, the purpose of these abstract classes is to implement some
+        of the methods of the EmergencyState interface that have the same
+        implentatiom between the concrete subclasses to help with code re-use.
+
+    Concrete Subclasses (Concrete States)
+
+        ChemSpillNoResponder.java & ChemSpillWithResponder.java
+
+            ChemSpillNoResponder represents a chemical spill emergency with no responders present
+            ChemSpillWithResponder represents a chemical spill emergency with responders present.
+            Both of these classes extend the ChemicalSpill abstract class. 
+
+        FireHighNoResponder.java & FireHighWithResponder.java
+
+            FireHighNoResponder represents a chemical spill emergency with no responders present.
+            FireHighWithResponder represents a chemical spill emergency with responders present.
+            Both of these classes extend the FireLow abstract class. 
+
+        FireHighNoResponder.java & FireHighWithResponder.java
+
+            FireHighNoResponder represents a fire high emergency with no responders present.
+            FireHighWithResponder represents a fire high emergency with responders present.
+            Both of these classes extend the FireHigh abstract class.
+
+        FloodNoResponder.java & FloodWithResponder.java
+
+            FireHighNoResponder represents a flood emergency with no responders present.
+            FireHighWithResponder represents a flood emergency with responders present.
+            Both of these classes extend the Flood abstract class.
+
+        All the concrete subclasses also have implementations of certain methods from
+        the EmergencyState interface that are specific to their own states. The concrete
+        classes will also call the context's (Emergency) setState method to change the
+        state if needed.
+
+
+Assumptions
+
+    1.  It is assumed that no responder will arrive before an emergency has occured.
+        
+        Since the purpose of this programme is to simulate emergency service responses,
+        therefore the movement of responders to and fro locations that have no related
+        (corresponding emergency type with responder type) ongoing emergencies are outside
+        the scope of this programme.
+
+        If a responder happens to be present at a location before a related emergency occurs,
+        it is expected that the reponder would have to report its presence again in attending 
+        the emergency when it occurs later via the poll() method that the programme calls
+        every second. This is because, even though a responder may be present before the
+        emergency occurs, it does not mean that the responder will attend to the emergency
+        when it occurs. 
+
+        Therefore, any poll messages indicating that a responder has arrived or departed
+        from a non-existent emergency will be considered an invalid message. It will be
+        logged and the program will ignore the message.
+
+    
